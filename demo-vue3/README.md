@@ -92,4 +92,14 @@ import image01 from "@assets/image01.jpg"
 <img src={image01} alt="" />
 ```
 
+### 配置eslint和.prettierrc
+安装和配置 eslint
+```js 
+npm init @eslint/config
+npm install eslint-config-standard eslint-plugin-import eslint-plugin-promise eslint-plugin-node -D
+```
+
+
+### 环境变量
+通过 import.mate.env 来判断项目的运行环境
 
