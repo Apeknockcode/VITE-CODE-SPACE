@@ -14,7 +14,8 @@ export default defineConfig({
   },
   resolve:{
     alias:{
-      '@styles':"/src/styles"
+      '@styles':"src/styles",
+      '@assets':"/src/assets"
     }
   }
 })

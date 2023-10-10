@@ -68,3 +68,28 @@ tsc --noEmit 表示校验
 ```bash
 npm install vue-tsc
 ```
+### client types
+```json
+在tsconfig.json中编辑引入
+compilerOptions:{
+    ...,
+    "types": ["vite/client"],           
+}
+```
+配置完成之后，就可以使用上面的属性
+```ts
+import.meta.env
+import.meta.glob
+import.meta.hot
+import.meta.url
+```
+
+
+### 静态文件处理
+导入静态资源图片
+```jsx
+import image01 from "@assets/image01.jpg"
+<img src={image01} alt="" />
+```
+
+
