@@ -102,4 +102,31 @@ npm install eslint-config-standard eslint-plugin-import eslint-plugin-promise es
 
 ### 环境变量
 通过 import.mate.env 来判断项目的运行环境
+#### 属性：
+- MODE
+- BASE_URL
+- PROD
+- DEV
+在main.js 中编辑
+```js
+console.log("ENV",import.meta.env)
+输出：
+{
+    "BASE_URL":"/",
+    "MODE":"development",
+    "DEV":true,
+    "PROD":false,
+    "SSR":false
+}
+```
+### 自定义环境变量
+通过创建 .env 文件
+```js
+VITE_TITLE = "自定义标题" // 需要以 VITE_ 为开头的文字进行命名，否则为undefine
+console.log(import.meta.env.VITE_TITLE) // 输出结果为 "自定义标题"
 
+```
+#### 创建 .env.development （开发环境）
+#### 创建 .env.production （正式环境）
+
+- 不同的环境 ，vite会加载不同的文件
