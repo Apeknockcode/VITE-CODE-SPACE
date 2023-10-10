@@ -1,0 +1,11 @@
+
+:root{
+    /* 命名空间 */
+    --main-bg-color:green;
+}
+.red{
+    /* 使用变量名称 */
+    /* @console.error hello root */
+    color: var(--main-bg-color);
+}
+
